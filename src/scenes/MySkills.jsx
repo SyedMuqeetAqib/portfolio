@@ -4,8 +4,35 @@ import { motion } from "framer-motion";
 
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
+
+  const skills = [
+    "React JS",
+    "PHP",
+    "Tailwind",
+    "CSS",
+    "Next",
+    "JS",
+    "Jest/Mocha",
+    "Testin",
+    "AWS",
+    "Dock",
+    "Redux",
+    "Blockchain (EVM + NEAR)",
+    "Web3.js",
+    "Ethers.js",
+    "TheGraph",
+    "Node JS",
+    "MySQL",
+    "Nest JS",
+    "MongoDB",
+    "Github",
+  ];
+  const SkillItem = (props) => {
+    const { text } = props;
+    return <span className="text-red">{text}</span>;
+  };
   return (
-    <section id="skills" className="pt-10 pb-24">
+    <section id="skills" className="mt-10 pb-24">
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div
@@ -24,8 +51,13 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-            fames odio in at.
+            {skills.map((item) => {
+              return (
+                <span>
+                  <SkillItem text={item} /> {" | "}
+                </span>
+              );
+            })}
           </p>
         </motion.div>
 
@@ -65,15 +97,14 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">01</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Experience
+                Blockchain
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            A auctor pharetra hendrerit mattis amet etiam interdum platea. Est
-            morbi porttitor scelerisque fermentum, sagittis non egestas. Amet
-            odio sit sagittis,
+            I've worked on multiple Dapps using EVM and non-EVM blockchains
+            which includes Ethereum, Polygon, Binance, Aurora and Near Protocol.
           </p>
         </motion.div>
 
@@ -93,16 +124,14 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">02</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Innovative
+                Typescript
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Urna, eget pulvinar dolor cursus volutpat dictum odio. Nec ultricies
-            amet in in neque nibh tortor. Libero sed pretium justo nulla blandit
-            nulla amet habitant iaculis. Iaculis in congue vitae sollicitudin
-            faucibus a
+            Have worked on dapps/apps, Frontends and Backends utilizing
+            Typescript to manage type safety.
           </p>
         </motion.div>
         {/* IMAGINATIVE */}
@@ -121,16 +150,14 @@ const MySkills = () => {
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">03</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Imaginative
+                Javascript
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
           <p className="mt-5">
-            Accumsan eu fringilla nisi, eget. Vitae, eget ut id proin arcu in
-            curabitur. Lectus libero, egestas enim aliquam quis felis amet.
-            Sagittis, amet netus fringilla netus lobortis odio sed platea.
-            Bibendum.
+            Javascript with Node JS, React JS and Nest JS to support our
+            applications.
           </p>
         </motion.div>
       </div>

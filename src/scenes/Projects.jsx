@@ -1,3 +1,4 @@
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 
@@ -15,21 +16,29 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title }) => {
-  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
+const Project = ({ title, image, link, details }) => {
+  const overlayStyles = `absolute shadow-xl rounded-xl h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-  const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
     <motion.div variants={projectVariant} className="relative">
-      <div className={overlayStyles}>
-        <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-          porttitor accumsan tincidunt.
-        </p>
-      </div>
-      <img src={`../assets/${projectTitle}.jpeg`} alt={projectTitle} />
+      <a href={link} target="_blank">
+        <div className={overlayStyles}>
+          <p className="text-2xl font-playfair text-gray-900">{title}</p>
+          <p className="mt-7 text-gray-700">{details}</p>
+          <button
+            className="bg-red text-deep-blue rounded-sm py-3 px-7 font-semibold
+              hover:bg-blue hover:text-white transition duration-500 mt-10"
+          >
+            Visit Application
+          </button>
+        </div>
+        <img
+          src={`../assets/${image}.png`}
+          alt={image}
+          className="shadow-2xl rounded-xl "
+        />
+      </a>
     </motion.div>
   );
 };
@@ -57,46 +66,46 @@ const Projects = () => {
             <LineGradient width="w-2/3" />
           </div>
         </div>
-        <p className="mt-10 mb-10">
-          Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
-          fames odio in at. At magna ornare dictum lectus. Purus massa morbi
-          purus nec eget eleifend ut elit.
-        </p>
+        <p className="mt-10 mb-10"></p>
       </motion.div>
 
       {/* PROJECTS */}
       <div className="flex justify-center">
         <motion.div
-          className="sm:grid sm:grid-cols-3"
+          className="sm:grid sm:grid-cols-2 grid-cols flex gap-10 flex-col"
           variants={container}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-          <div
-            className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            BEAUTIFUL USER INTERFACES
-          </div>
-          <Project title="Project 1" />
-          <Project title="Project 2" />
+
+          <Project
+            title="Aramid Near Bridge"
+            image="aramid"
+            link="https://main.k8s.aramid.finance/"
+            details="Aramid Bridge is one of the first bridge to support Near to EVM and to Algorand chain bridge of funds. It supports multiple wallets with multiple chains to connect to blockchain."
+          />
+          <Project
+            title="Kolnet Presale Marketplace"
+            image="kolnet"
+            link="https://testnet.kolnet.io/"
+            details="Kolnet is a token presale market by using marketing in its process to make sure only authentic tokens get more recognitions and funds from users."
+          />
 
           {/* ROW 2 */}
-          <Project title="Project 3" />
-          <Project title="Project 4" />
-          <Project title="Project 5" />
-
-          {/* ROW 3 */}
-          <Project title="Project 6" />
-          <Project title="Project 7" />
-          <div
-            className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            SMOOTH USER EXPERIENCE
-          </div>
+          <Project
+            title="Events Dapp"
+            image="eventsdapp"
+            link="https://eventsdapp-45b48.web.app/"
+            details="Events Dapp is event management dapp by Phoenix DAO which provides event ticketing functionality as NFTs which allows users to buy and sell their tickets to make use in real life events."
+          />
+          <Project
+            title="MContent Bridge"
+            image="mcontent"
+            link="https://bridge.mcontent.net/"
+            details="MContent Bridge to bridge mcontent reflect tokens from Ethereum to Binance network."
+          />
         </motion.div>
       </div>
     </section>
