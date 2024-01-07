@@ -76,8 +76,21 @@ const Projects = () => {
           variants={container}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          // viewport={{ once: true, amount: 0.2 }}
         >
+          <Project
+            title="Stashed Account Abstracted Wallet"
+            image="stashed"
+            link="https://dev-wallet.joinstashed.com/"
+            details="Stashed is a wallet that uses Account Abstraction for user experience where user do not have to handle with private key or seedphrase and users do not have to deal with gas fees as they can perform transactions using their non native tokens."
+          />
+          <Project
+            title="Bullion FX"
+            image="bullionFX"
+            link="https://bullionfx.com/"
+            details="A decentralised financial ecosystem built on auditable physical gold"
+          />
+
           {/* ROW 1 */}
 
           <Project
