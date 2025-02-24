@@ -50,7 +50,7 @@ const Landing = ({ setSelectedPage }) => {
           </p>
 
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Frontend Developer with two 3 of professional experience, have
+            Frontend Developer with 4 years of professional experience, have
             experience in developing web3 dapps. Possess expertise in working
             with both web2 and web3 stacks, and proficient in developing MERN
             applications as well as Smart Contracts.

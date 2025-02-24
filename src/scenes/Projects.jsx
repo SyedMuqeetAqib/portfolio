@@ -78,6 +78,12 @@ const Projects = () => {
           whileInView="visible"
           // viewport={{ once: true, amount: 0.2 }}
         >
+           <Project
+            title="Spaace Arena"
+            image="spaaceArena"
+            link="https://arena.spaace.io/"
+            details="Spaace Arena is a competitive game that awards you stars and xps based on your progress. Playing games will reward you the tokens that you can use them in the ecosystem."
+          />
           <Project
             title="Stashed Account Abstracted Wallet"
             image="stashed"
