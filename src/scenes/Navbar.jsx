@@ -30,7 +30,12 @@ const Link = ({ page, selectedPage, setSelectedPage, isMobile = false }) => {
   );
 };
 
-const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
+const Navbar = ({
+  isTopOfPage,
+  isHeroVisible,
+  selectedPage,
+  setSelectedPage,
+}) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
@@ -51,6 +56,15 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         <motion.h4
           className="font-space text-xl font-bold text-gradient"
           whileHover={{ scale: 1.05 }}
+          initial={{ opacity: 0, x: -20 }}
+          animate={{
+            opacity: isHeroVisible ? 0 : 1,
+            x: isHeroVisible ? -20 : 0,
+          }}
+          transition={{
+            duration: 0.5,
+            ease: "easeInOut",
+          }}
         >
           Syed Muqeet Aqib
         </motion.h4>

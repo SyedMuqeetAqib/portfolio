@@ -1,0 +1,17 @@
+# Open Graph Image Placeholder
+
+To complete the SEO setup, you need to create an og-image.png file (1200x630px) for social media sharing.
+
+You can:
+1. Take a screenshot of the og-image.html file in your browser
+2. Use the HTML file as a template to create the image
+3. Use online tools like Canva or Figma to create a similar design
+
+The image should include:
+- Your name: "Syed Muqeet Aqib"
+- Your title: "Full Stack Developer & Blockchain Engineer"
+- A brief description
+- Your brand colors (gradient background)
+- Professional styling
+
+Save the image as "og-image.png" in the public folder.

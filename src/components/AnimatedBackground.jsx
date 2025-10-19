@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import TwinklingStars from "./TwinklingStars";
 
 const AnimatedBackground = () => {
   return (
@@ -41,6 +42,9 @@ const AnimatedBackground = () => {
           />
         ))}
       </div>
+
+      {/* Twinkling Stars */}
+      <TwinklingStars />
 
       {/* Gradient overlay for depth */}
       <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/20" />

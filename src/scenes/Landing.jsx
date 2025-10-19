@@ -3,6 +3,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import SocialMediaIcons from "../components/SocialMediaIcons";
 import ScrollIndicator from "../components/ScrollIndicator";
 import GlassButton from "../components/GlassButton";
+import TwinklingStars from "../components/TwinklingStars";
 
 const Landing = ({ setSelectedPage }) => {
   const containerVariants = {
@@ -39,8 +40,11 @@ const Landing = ({ setSelectedPage }) => {
       id="home"
       className="min-h-screen flex flex-col items-center justify-center relative px-6"
     >
+      {/* Hero Section Stars */}
+      <TwinklingStars />
+
       <motion.div
-        className="text-center max-w-4xl mx-auto"
+        className="text-center max-w-4xl mx-auto relative z-10"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
