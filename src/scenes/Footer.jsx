@@ -19,7 +19,7 @@ const Footer = () => {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            Syed Muqeet Aqib
+            Mike Hiker
           </motion.h3>
 
           <motion.p

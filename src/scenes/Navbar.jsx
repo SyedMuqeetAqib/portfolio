@@ -66,7 +66,7 @@ const Navbar = ({
             ease: "easeInOut",
           }}
         >
-          Syed Muqeet Aqib
+          Mike Hiker
         </motion.h4>
 
         {/* DESKTOP NAV */}
