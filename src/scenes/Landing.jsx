@@ -54,7 +54,7 @@ const Landing = ({ setSelectedPage }) => {
           className="text-6xl md:text-8xl font-space font-black mb-6"
           variants={nameVariants}
         >
-          <span className="text-gradient">Mike Hiker</span>
+          <span className="text-gradient">Syed Muqeet Aqib</span>
         </motion.h1>
 
         {/* Subtitle */}

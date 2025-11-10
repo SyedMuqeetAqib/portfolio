@@ -6,7 +6,7 @@ This document outlines the SEO optimizations implemented for the portfolio websi
 
 ### 1. HTML Meta Tags
 
-- **Title**: "Mike Hiker - Full Stack Developer & Blockchain Engineer"
+- **Title**: "Syed Muqeet Aqib - Full Stack Developer & Blockchain Engineer"
 - **Description**: Comprehensive description highlighting experience and skills
 - **Keywords**: Relevant keywords for full-stack development and blockchain
 - **Author**: Proper author attribution
@@ -35,7 +35,7 @@ This document outlines the SEO optimizations implemented for the portfolio websi
 
 ### 5. Web App Manifest
 
-- **App Name**: "Mike Hiker - Full Stack Developer & Blockchain Engineer"
+- **App Name**: "Syed Muqeet Aqib - Full Stack Developer & Blockchain Engineer"
 - **Description**: Detailed app description
 - **Theme Colors**: Matching the portfolio's dark theme
 - **Icons**: Multiple icon sizes for different devices

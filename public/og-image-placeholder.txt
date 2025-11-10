@@ -8,7 +8,7 @@ You can:
 3. Use online tools like Canva or Figma to create a similar design
 
 The image should include:
-- Your name: "Mike Hiker"
+- Your name: "Syed Muqeet Aqib"
 - Your title: "Full Stack Developer & Blockchain Engineer"
 - A brief description
 - Your brand colors (gradient background)

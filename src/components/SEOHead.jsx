@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 const SEOHead = ({
-  title = "Mike Hiker - Full Stack Developer & Blockchain Engineer",
+  title = "Syed Muqeet Aqib - Full Stack Developer & Blockchain Engineer",
   description = "Full Stack Engineer with 4 years of professional experience, building end-to-end web applications and blockchain solutions. Expert in MERN stack, smart contracts, and scalable system architecture.",
   keywords = "Full Stack Developer, Blockchain Engineer, MERN Stack, Smart Contracts, Web Development, Software Engineer, React, Node.js, Solidity, DeFi, Web3",
   image = "/og-image.png",
