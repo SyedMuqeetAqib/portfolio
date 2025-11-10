@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const ScrollIndicator = () => {
   return (
     <motion.div
-      className="absolute bottom-8 left-0 right-0 flex justify-center z-20"
+      className="fixed bottom-8 left-0 right-0 flex justify-center z-20"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 2, duration: 0.8 }}
