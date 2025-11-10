@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import GlassCard from "../components/GlassCard";
 import GlassButton from "../components/GlassButton";
-import SocialMediaIcons from "../components/SocialMediaIcons";
 
 const Contact = () => {
   const {
