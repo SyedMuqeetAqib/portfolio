@@ -42,7 +42,7 @@ const ProjectCard = ({
         <div className="relative w-full h-48 overflow-hidden">
           {video ? (
             <motion.video
-              src={`../assets/${video}`}
+              src={`/assets/${video}`}
               alt={title}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               autoPlay
@@ -52,7 +52,7 @@ const ProjectCard = ({
             />
           ) : (
             <motion.img
-              src={`../assets/${image}.png`}
+              src={`/assets/${image}.png`}
               alt={title}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
