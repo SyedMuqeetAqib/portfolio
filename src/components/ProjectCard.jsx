@@ -18,6 +18,7 @@ const ProjectCard = ({
   year,
   role,
   delay = 0,
+  isOwnProduct = false,
 }) => {
   const handleCardClick = () => {
     if (liveLink) {
@@ -62,9 +63,16 @@ const ProjectCard = ({
         <div className="p-6 flex-grow flex flex-col">
           {/* Header */}
           <div className="mb-4">
-            <h3 className="text-xl font-space font-bold text-white mb-2">
-              {title}
-            </h3>
+            <div className="flex items-center gap-2 mb-2">
+              <h3 className="text-xl font-space font-bold text-white">
+                {title}
+              </h3>
+              {isOwnProduct && (
+                <span className="text-xs px-2 py-1 rounded-md bg-gradient-to-r from-purple-500/20 to-pink-500/20 text-purple-300 border border-purple-500/30 font-medium">
+                  My Product
+                </span>
+              )}
+            </div>
             <p className="text-gray-400 text-sm mb-3 leading-relaxed">
               {description}
             </p>

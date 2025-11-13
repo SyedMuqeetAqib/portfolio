@@ -19,6 +19,37 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "Tabula Notes",
+      image: "light-demo-ss",
+      liveLink: "https://tabula-notes-website.vercel.app/",
+      githubLink: "",
+      description:
+        "TabulaNote is a Chrome extension that turns your new tab into a note-taking space. It provides a minimal editor with rich text formatting, block-based editing, and checklists. Notes sync to Google Drive with daily reminders, and the interface supports dark mode and keyboard shortcuts. Features include a floating toolbar, multiple notes, and direct image pasting. It's designed to be distraction-free, fast, and always synced across devices.",
+      longDescription:
+        "TabulaNote is a Chrome extension that transforms your browser's new tab into a powerful note-taking workspace. Built with a focus on productivity and minimalism, it offers a rich text editor with block-based editing, allowing users to format their thoughts with headings, checklists, and more. The extension seamlessly syncs notes to Google Drive with daily reminders, ensuring your work is always backed up and accessible across devices. With dark mode support, keyboard shortcuts, and a floating toolbar, TabulaNote provides a distraction-free environment for capturing and organizing ideas instantly.",
+      technologies: [
+        "Chrome Extension",
+        "JavaScript",
+        "Google Drive API",
+        "Rich Text Editor",
+        "Block-based Editing",
+      ],
+      features: [
+        "Rich text formatting with block-based editor",
+        "Google Drive sync with daily reminders",
+        "Dark mode support",
+        "Keyboard shortcuts for efficient editing",
+        "Floating toolbar and multiple notes",
+        "Direct image pasting",
+        "Distraction-free interface",
+      ],
+      tags: ["Chrome Extension", "Productivity", "Note-taking", "Google Drive"],
+      status: "Live",
+      year: "2024",
+      role: "Creator & Developer",
+      isOwnProduct: true,
+    },
+    {
       title: "Spaace Arena",
       image: "spaaceArena",
       video: "spaace-demo.mov",
@@ -294,6 +325,7 @@ const Projects = () => {
                 liveLink={project.liveLink}
                 technologies={project.technologies}
                 delay={index * 0.1}
+                isOwnProduct={project.isOwnProduct}
               />
             ))}
           </AnimatePresence>
